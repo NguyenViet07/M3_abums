@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {PhotoService} from './photo.service';
+import {Photo} from './photo';
 
 @Component({
   selector: 'app-root',

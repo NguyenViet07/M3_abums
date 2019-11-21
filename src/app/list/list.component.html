@@ -1,0 +1,19 @@
+<p>list works!</p>
+<table>
+  <tr>
+    <th> Id</th>
+    <th> Title</th>
+    <th> Url</th>
+    <th> Thumbnail Url</th>
+    <th> Edit</th>
+    <th> Delete </th>
+  </tr>
+  <tr *ngFor="let photo of photoList">
+    <td>{{ photo.id }}</td>
+    <td>{{ photo.title}}</td>
+    <td>{{ photo.url}}</td>
+    <td>{{ photo.thumbnailUrl}}</td>
+    <td><a [routerLink]="'photoList/edit',photo.id">Edit</a></td>
+    <td> <a [routerLink]="['/photoList/delete',photo.id]">Delete</a></td>
+  </tr>
+</table>
